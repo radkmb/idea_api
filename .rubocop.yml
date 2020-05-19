@@ -1,0 +1,42 @@
+AllCops:
+  Exclude:
+    - "vendor/**/*" # rubocop config/default.yml
+    - "db/schema.rb"
+    - "spec/spec_helper.rb"
+    - "spec/rails_helper.rb"
+    - "db/seeds.rb"
+    - "config/puma.rb"
+    - "config/initializers/wrap_parameters.rb"
+    - "config/initializers/cors.rb"
+    - "config/initializers/backtrace_silencers.rb"
+    - "config/environments/test.rb"
+    - "config/environments/production.rb"
+    - "config/environments/development.rb"
+    - "config/environment.rb"
+    - "config/boot.rb"
+    - "config/application.rb"
+    - "config.ru"
+    - "bin/*"
+    - "app/models/idea.rb"
+    - "Gemfile"
+    - "Rakefile"
+    - "app/jobs/application_job.rb"
+    - "app/mailers/application_mailer.rb"
+    - "app/models/application_record.rb"
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+StringLiterals:
+  EnforcedStyle: double_quotes
+AsciiComments:
+  Enabled: false
+Metrics/AbcSize:
+  Max: 20
+MethodLength:
+  CountComments: true
+  Max: 100
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+Style/Documentation:
+  Enabled: false
